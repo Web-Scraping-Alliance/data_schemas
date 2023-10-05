@@ -1,0 +1,59 @@
+{
+  "availability": {
+    "type": "string",
+    "allowed": [
+      "InStock",
+      "OutOfStock"
+    ],
+    "description": "The availability status for the product."
+  },
+  "color": {
+    "type": "string",
+    "description": "The color of the product."
+  },
+  "currency": {
+    "type": "string",
+    "description": "The currency associated with the price, in ISO 4217 standard (e.g. USD)."
+  },
+  "currencyRaw": {
+    "type": "string",
+    "description": "The currency associated with the price, as appears on the page (no post-processing)."
+  },
+  "productId": {
+    "type": "string",
+    "description": "Product identifier, unique across dataset. It may come in the form of an SKU, any other identifier, a hash or even a URL.\nUnique across dataset."
+  },
+  "name":{
+    "type": "string",
+    "description": "The name of the product, as appears on the page (no post-processing).\nFormat: trimmed."
+  },
+  "size": {
+    "type": "string",
+    "description": "Denotes the size or dimensions of the product. Pertinent to products such as garments, shoes, accessories etc."
+  },
+  "sku": {
+    "type": "string",
+    "description": "The Stock Keeping Unit (SKU), i.e. a merchant-specific identifier for the product."
+  },
+  "style": {
+    "type": "string",
+    "description": "Denotes the style of the product. Pertinent to products such as garments, shoes, accessories etc."
+  },
+  "url": {
+    "type": "string",
+    "description": "The main URL of the page where the product was extracted, after any redirects, but without canonicalization"
+  },
+  "description": {
+    "type": "string",
+    "description": "Full main description of the product, containing the most useful pieces of information, if other pieces of description can be found on the page. It may contain data found in other fields (features, additionalProperties).\nFormat:\n- trimmed (no whitespace at the beginning or the end of the description string),\n- line breaks included,\n- no length limit,\n- no normalization of Unicode characters,\n- no concatenation of description from different parts of the page."
+  },
+  "metadata": {
+    "type": "dict",
+    "schema": {
+      "dateDownloaded": {
+        "type": "datetime",
+        "description": "The timestamp at which the product data was downloaded.\nTimezone: UTC."
+      }
+    }
+  }
+}

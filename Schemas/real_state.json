@@ -1,0 +1,75 @@
+{
+  "url": {
+    "type": "string",
+    "description": "URL with real estate data."
+  },
+  "realEstateId": {
+    "type": "string",
+    "description": "The identifier of the real estate, usually assigned by the seller and unique within a website, similar to product SKU."
+  },
+  "name": {
+    "type": "string",
+    "description": "The name of the real estate."
+  },
+  "datePublished": {
+    "type": "datetime",
+    "description": "Publication date of the real estate offer."
+  },
+  "description": {
+    "type": "string",
+    "description": "The description of the real estate."
+  },
+  "numberOfBathroomsTotal": {
+    "type": "integer",
+    "description": "The total number of bathrooms in the real estate."
+  },
+  "numberOfFullBathrooms": {
+    "type": "integer",
+    "description": "The number of full bathrooms in the real estate."
+  },
+  "numberOfPartialBathrooms": {
+    "type": "integer",
+    "description": "The number of half bathrooms in the real estate."
+  },
+  "numberOfBedrooms": {
+    "type": "integer",
+    "description": "The number of bedrooms in the real estate."
+  },
+  "numberOfRooms": {
+    "type": "integer",
+    "description": "The number of rooms (excluding bathrooms and closets) of the real estate."
+  },
+  "tradeType": {
+    "type": "string",
+    "allowed": [
+      "BuyAction",
+      "RentAction"
+    ],
+    "description": "Type of a trade action: buying or renting. Takes one of the values: RentAction, BuyAction."
+  },
+  "price": {
+    "type": "integer",
+    "description": "The offer price of the real estate."
+  },
+  "currency": {
+    "type": "string",
+    "description": "The currency associated with the price, in ISO 4217 standard (e.g. USD)."
+  },
+  "propertyType": {
+    "type": "string",
+    "description": "Type of the property, e.g. flat, house, land."
+  },
+  "yearBuilt": {
+    "type": "integer",
+    "description": "The year the real estate was constructed in."
+  },
+  "metadata": {
+    "type": "dict",
+    "schema": {
+      "dateDownloaded": {
+        "type": "datetime",
+        "description": "The timestamp at which the product data was downloaded.\nTimezone: UTC."
+      }
+    }
+  }
+}

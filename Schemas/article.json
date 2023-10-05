@@ -1,0 +1,39 @@
+{
+  "headline": {
+    "type": "string",
+    "description": "Article headline or title."
+  },
+  "datePublished": {
+    "type": "datetime",
+    "description": "Publication date of the article."
+  },
+  "inLanguage": {
+    "type": "string",
+    "description": "Language of the article, as an ISO 639-1 language code. Sometimes article language is not the same as the web page overall language."
+  },
+  "description": {
+    "type": "string",
+    "description": "A short summary of the article. It can be either human-provided (if available), or auto-generated."
+  },
+  "articleBody": {
+    "type": "string",
+    "description": "Clean text of the article, including sub-headings, with newline separators.\n\nFormat:\n\ntrimmed (no whitespace at the beginning or the end of the body string),\nline breaks included,\nno length limit,\nno normalization of Unicode characters."
+  },
+  "articleBodyHtml": {
+    "type": "string",
+    "description": "Simplified and standardized HTML of the article, including sub-headings, image captions and embedded content (videos, tweets, etc.).\n\nFormat: HTML string normalized in a consistent way with internal algorithm."
+  },
+  "url": {
+    "type": "string",
+    "description": "The main URL of the article page."
+  },
+  "metadata": {
+    "type": "dict",
+    "schema": {
+      "dateDownloaded": {
+        "type": "datetime",
+        "description": "The timestamp at which the product data was downloaded.\nTimezone: UTC."
+      }
+    }
+  }
+}
