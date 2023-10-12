@@ -1,32 +1,28 @@
 Web Scraping Alliance
 =====================
 
-The objective of the web scraping alliance is to offer an industry wide standard definition of scraped items,
-this will allow easy usage between companies and better integration on automated systems
+The objective of the Web Scraping Alliance is to establish an industry-wide standard definition for web extracted data,
+facilitating seamless data exchange between companies and enhancing integration into automated systems.
 
-This repository contains the structures of data schemas we are the result of the web scraping alliance,
-and are free to use.
+Within this repository, you'll find data schema structures that result from the collaboration of the Web Scraping Alliance.
+These schemas are freely available for use.
+
 
 How the schemas are defined
 ---------------------------
-The main purpose of defining a schema is to have an json object that can be used in many case as possible,
-for example the `product` schema should be in any e-commerce website instead of having an schema per website.
+The primary purpose of defining a schema is to create a JSON object that can be applied across various use cases.
+For instance, the `product` schema should be universally applicable to any e-commerce website, eliminating the need for a specific schema per site.
 
-To propose a new schema, it should be for information that any of the existing schemas cannot be applied to.
+To propose a new schema, it should be for data that cannot be accommodated by any of the existing schemas.
 
 How to collaborate
 ------------------
-This is an open repository, anyone can see its contents but to make a pull request one must be a member of the web scraping alliance.
+This is an open repository, accessible to anyone. However, to submit a pull request, one must be a member of the Web Scraping Alliance. To become a member please connect with hello@webscrapingalliance.org
 
-The acceptance of a pull request is determined by the following rules:
+The acceptance of a pull request follows these rules:
 
-* A pull request can be summited be any member of the web scraping alliance.
-* Each organization that belong the Web Scraping Alliance will have a member "administrator" role for one user per member organization.
-* A pull request will be merged to main branch if half plus one of all member with "administrator" role approves the pull request.
-* The criteria for a pull request acceptance, is the proposed changes expand the currents schemas without redundancy of information or duplicate fields, or it propose a new schema for a new type of information that any of the existing schemas cannot cover.
-* A pull request will be rejected if half plus one of all member with "administrator" role decide it.
-
-Web Scraping Alliance Members
------------------------------
-
-- `Bitmaker <https://bitmaker.la/>`_
+* Any member of the Web Scraping Alliance can submit a pull request.
+* Each organization within the Web Scraping Alliance will designate one user with an "administrator" role.
+* A pull request will be merged into the main branch if over half of the members with "administrator" roles approve it.
+* To be accepted, a pull request should expand the existing schemas without redundant information or duplicate fields, or propose a new schema to cover types of information not addressed by existing schemas.
+* A pull request will be rejected if over half of the members with "administrator" roles decide against it.
